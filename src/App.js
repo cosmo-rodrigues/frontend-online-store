@@ -12,14 +12,14 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={ Home } />
-          <Route exact path="/shoppingcart" component={ ShoppingCart } />
+          <Route exact path="https://cosmors.github.io/frontend-online-store" component={ Home } />
+          <Route exact path="https://cosmors.github.io/frontend-online-store/shoppingcart" component={ ShoppingCart } />
           <Route
             exact
-            path="/product-details/:id/:category"
+            path="https://cosmors.github.io/frontend-online-store/product-details/:id/:category"
             render={ (props) => <ProductDetails { ...props } /> }
           />
-          <Route exact path="/payment" component={ Payment } />
+          <Route exact path="https://cosmors.github.io/frontend-online-store/payment" component={ Payment } />
           <Route component={ NotFound } />
         </Switch>
       </BrowserRouter>
